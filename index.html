@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BCB7097</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>21BCB7097</h1>
+
+    <!-- Input Field and Submit Button -->
+    <div class="input-container">
+        <input type="text" id="jsonInput" placeholder="Enter JSON" />
+        <button onclick="submitData()">Submit</button>
+        <p id="error"></p>
+    </div>
+
+    <!-- Dropdown Menu (hidden initially) -->
+    <div id="dropdownContainer" style="display: none;">
+        <select id="dropdown" multiple>
+            <option value="Alphabets">Alphabets</option>
+            <option value="Numbers">Numbers</option>
+            <option value="HighestLowercase">Highest lowercase alphabet</option>
+        </select>
+        <button onclick="filterData()">Filter</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
